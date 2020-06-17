@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Balsamiq+Sans:ital@1&family=Lobster&family=MuseoModerno&family=Oswald&family=Pacifico&family=Sriracha&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+.myheader {
+  text-align: center;
+  background-image: url(photos/background.jpg);
+  background-repeat: none;
+  background-size: cover;
+  backface-visibility: hidden;
+}
+.myheader h1 {
+  font-family: "Acme", sans-serif;
+}
+.myheader p {
+  font-family: "Sriracha", cursive;
+}
+
+.profilepic {
+  border-radius: 50%;
+  border-image-width: 80%;
+}
+#about {
+  text-align: center;
+}
+#about h1 {
+  font-family: "Lobster", cursive;
+}
+#about p {
+  font-family: "Balsamiq Sans", cursive;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Skills*/
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #eee;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*Upto Here*/
+.card {
+  image-resolution: 273px, 183px;
+  height: 28em;
+}
+#projects h1 {
+  margin-top: 0.75cm;
+  margin-bottom: 0.75cm;
+  text-align: center;
+  font-family: "Sriracha", cursive;
+}
+.carousel-inner h5 {
+  color: black;
+  font-size: 40px;
+  font-family: "Anton", sans-serif;
+}
+.carousel-inner p {
+  color: black;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+}
+.carousel-inner img {
+  opacity: 0.2;
+}
+#contact {
+  background-color: #eee;
+  display: block;
+  text-align: center;
+  padding-top: 0.5cm;
+  padding-bottom: 0.5cm;
+  font-family: "MuseoModerno", cursive;
+}
+#contact h1 {
+  font-family: "MuseoModerno", cursive;
+}
+.Skills {
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+  background-color: #eee;
+  /*align-items: center;
+  justify-content: center;
+  align-content: center;*/
+  display: flex;
+  flex-direction: column;
+  /* width: 25%;*/
+  text-align: center;
+  align-items: center;
+  /* margin-left: initial;*/
+}
+.Skills h1 {
+  padding-bottom: 0.5cm;
+  font-family: "Pacifico", cursive;
+}
+.Skills img {
+  height: 100px;
+  /*display: flex;
+  flex-direction: column;
+  float: left;*/
+  /*padding-left: 0.3cm;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /*-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);*/
+}
+
+.Skills img:hover {
+  /*filter: none;
+  -webkit-filter: grayscale(0);*/
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other 
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns 
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+*/
+.copyright {
+  height: 2 cm;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+ a.fa.fa-angle-down {
+        margin-top: 10px !important;
+    }
+}
+
+a.fa.fa-angle-down {
+    padding: 5px 5px;
+    color: #aaa;
+    font-size: 500px;
+    margin-top: 175px;
+    transition: all 0.5s;
+}
+
+@media screen and (min-width: 1600px) {
+    a.fa.fa-angle-down {
+        position: relative;
+        bottom: 200px;
+    }
+}
+
+a.fa.fa-angle-down:hover {
+    color: #def;
+    size: 200%;
+    text-decoration: none;
+}
+
+a.fa.fa-angle-down:focus {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.light {
+    font-weight: 300;
+}
+
+.nav > li {
+    font-size: 13px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    z-index: 999;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-color: transparent;
+    background-color: #000;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 500;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand:hover {
+    opacity: 0.8;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+
+/*Navbar Logo Image*/
+
+.navbar-custom a img {
+    width: 25px;
+    display: inline;
+    margin-top: -5px;
+    margin-right: 15px;
+}
+
+.navbar-custom a {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.navbar-custom a:hover {
+    color: #ccc;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: #ccc;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+
+/* MIN-WIDTH: "If [device width] is GREATER than or equal to [992px], then do {...}"*/
+
+
+/* MAX-WIDTH: "If [device width] is LESS than or equal to [992px], then do {...}"*/
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 818px) {
+    .nav > li > a {
+        padding: 15px 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    /*.container {
+      width: 900px;
+    }*/
+    .navbar-custom {
+        padding: 15px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        background: #000;
+    }
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.navbar-brand.page-scroll {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.navbar-shadow {
+    -webkit-box-shadow: 0px 1px 1px #444;
+    -moz-box-shadow: 0px 1px 1px #444;
+    box-shadow: 0px 1px 1px #444;
+    -webkit-transition: all ease .7s;
+    -moz-transition: all ease .7s;
+    transition: all ease .7s;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-shadow {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+
+/* ======= INTRODUCTION ======= */
+
+#intro {
+    background: url(../img/mountain-dusk.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #000;
+}
+
+#intro .overlay {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
+    /* IE6-9 */
+    height: 750px;
+    background-attachment: fixed;
+}
+
+#intro h1 {
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+#intro p.subtitle {
+    color: #ddd;
+}
+
+.intro-content {
+    position: absolute;
+    padding: 20% 0 5% 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .intro-content {
+        padding: 25% 0 5% 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro-content {
+        padding: 30% 0 5% 0;
+    }
+    .navbar-toggle {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .intro-content {
+        padding: 45% 0 5% 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/*
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+/*.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
