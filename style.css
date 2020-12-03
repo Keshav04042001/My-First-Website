@@ -233,6 +233,8 @@ a.fa.fa-angle-down:focus {
 .navbar {
     margin-bottom: 0;
     z-index: 999;
+    position: fixed;
+    margin-top: 0px;
 }
 
 .navbar-custom {
@@ -348,6 +350,7 @@ a.fa.fa-angle-down:focus {
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
+        position: fixed;
     }
     .navbar-custom.top-nav-collapse {
         padding: 0;
