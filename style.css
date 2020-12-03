@@ -186,17 +186,17 @@ html {
   text-align: center;
 }
 
-/* a.fa.fa-angle-down {
+ a.fa.fa-angle-down {
         margin-top: 10px !important;
     }
 }
 
 a.fa.fa-angle-down {
     padding: 5px 5px;
-    color: #aaa;
-    font-size: 500px;
+    color: #de2114;
+    font-size: 2000px;
     margin-top: 175px;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 @media screen and (min-width: 1600px) {
@@ -207,254 +207,18 @@ a.fa.fa-angle-down {
 }
 
 a.fa.fa-angle-down:hover {
-    color: #def;
-    size: 200%;
+    color: #db0fc0;
+    size: 400%;
     text-decoration: none;
 }
 
 a.fa.fa-angle-down:focus {
     text-decoration: none;
 }
-  */
-
-@import url(https://fonts.googleapis.com/css?family=Cabin);
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-  background-color: #30333A;
-}
-
-.mouse{
-  width: 52px;
-  height: 88px;
-  position: relative;
-  background: #4e5559 linear-gradient(transparent 0%,
-                                      transparent 50%,
-                                      #ffffff 50%,
-                                      #ffffff 100%);
-  background-size: 100% 200%;
-  border-radius: 100px;
-  animation: colorSlide 5s linear infinite,
-             nudgeMouse 5s ease-out infinite;
-}
-.mouse:before,
-.mouse:after{
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-.mouse:before{
-  width: 46px;
-  height: 82px;
-  background-color: #30333a;
-  border-radius: 100px;
-}
-.mouse:after{
-  background-color: #ffffff;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  animation: trackBallSlide 5s linear infinite;
-}
-.text{
-  margin-top: 50px;
-  font-family: Cabin;
-  letter-spacing: 12px;
-  color: #fff;
-  text-indent: 12px;
-  animation: colorText 5s ease-out infinite,
-             nudgeText 5s ease-out infinite;
-}
-
-/* Animations */
-@keyframes colorSlide{
-  0% {
-    background-position: 0% 100%;
-  }
-  20% {
-    background-position: 0% 0%;
-  }
-  21% {
-    background-color: #4e5559;
-  }
-  29.99% {
-    background-color: #ffffff;
-    background-position: 0% 0%;
-  }
-  30% {
-    background-color: #4e5559;
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 0% 0%;
-  }
-  51% {
-    background-color: #4e5559;
-  }
-  59% {
-    background-color: #ffffff;
-    background-position: 0% 0%;
-  }
-  60% {
-    background-color: #4e5559;
-    background-position: 0% 100%;
-  }
-  80% {
-    background-position: 0% 0%;
-  }
-  81% {
-    background-color: #4e5559;
-  }
-  90%, 100% {
-    background-color: #ffffff;
-  }
-}
-
-@keyframes colorText{
-  21% {
-    color: #4e5559;
-  }
-  30% {
-    color: #ffffff;
-  }
-  51% {
-    color: #4e5559;
-  }
-  60% {
-    color: #ffffff;
-  }
-  81% {
-    color: #4e5559;
-  }
-  90% {
-    color: #ffffff;
-  }
-} 
-
-@keyframes trackBallSlide{
-  0%{
-    opacity: 1;
-    transform: scale(1) translateY(-20px);
-  }
-  6%{
-    opacity: 1;
-    transform: scale(0.9) translateY(5px);
-  }
-  14%{
-    opacity: 0;
-    transform: scale(0.4) translateY(40px);
-  }
-  15%, 19%{
-    opacity: 0;
-    transform: scale(0.4) translateY(-20px);
-  }
-  28%, 29.99%{
-    opacity: 1;
-    transform: scale(1) translateY(-20px);
-  }
-  30%{
-    opacity: 1;
-    transform: scale(1) translateY(-20px);
-  }
-  36%{
-    opacity: 1;
-    transform: scale(0.9) translateY(5px);
-  }
-  44%{
-    opacity: 0;
-    transform: scale(0.4) translateY(40px);
-  }
-  45%, 49%{
-    opacity: 0;
-    transform: scale(0.4) translateY(-20px);
-  }
-  58%, 59.99%{
-    opacity: 1;
-    transform: scale(1) translateY(-20px);
-  }
-  60%{
-    opacity: 1;
-    transform: scale(0.9) translateY(-20px);
-  }
-  66%{
-    opacity: 1;
-    transform: scale(0.9) translateY(5px);
-  }
-  74%{
-    opacity: 0;
-    transform: scale(0.4) translateY(40px);
-  }
-  75%, 79%{
-    opacity: 0;
-    transform: scale(0.4) translateY(-20px);
-  }
-  88%, 100%{
-    opacity: 1;
-    transform: scale(1) translateY(-20px);
-  }
-}
-@keyframes nudgeMouse{
-  0%{
-    transform: translateY(0);
-  }
-  20%{
-    transform: translateY(8px);
-  }
-  30%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(8px);
-  }
-  60%{
-    transform: translateY(0);
-  }
-  80%{
-    transform: translateY(8px);
-  }
-  90%{
-    transform: translateY(0);
-  }
-}
-@keyframes nudgeText {
-  0%{
-    transform: translateY(0);
-  }
-  20%{
-    transform: translateY(2px);
-  }
-  30%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(2px);
-  }
-  60%{
-    transform: translateY(0);
-  }
-  80%{
-    transform: translateY(2px);
-  }
-  90%{
-    transform: translateY(0);
-  }
-}
-
-
-
-
-
+  
 
 .light {
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .nav > li {
