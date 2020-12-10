@@ -1,6 +1,6 @@
 ### My-First-Website
 ** This is my portfolio**
 
-### please visit my website <a href="http://keshavagrawal.me/My-First-Website/" target="_blank">Website</a>
+### please visit my [WEBSITE](http://keshavagrawal.me/My-First-Website/)
 
 
