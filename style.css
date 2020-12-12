@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: no-drop;
   scroll-snap-type: proximity;
 }
 .myheader {
