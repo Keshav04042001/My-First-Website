@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: proximity;
 }
 .myheader {
   text-align: center;
@@ -9,6 +10,7 @@ html {
   background-repeat: none;
   background-size: cover;
   backface-visibility: hidden;
+  
 }
 .myheader h1 {
   font-family: "Acme", sans-serif;
